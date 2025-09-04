@@ -66,17 +66,17 @@ body{
 @media(max-width:500px){
   #clock-box {
     padding: 15px;
-    width: 85%;
+    width: 80%;
     max-width: none;
   }
 
   #clock{
-  font-size: 4rem; 
+  font-size: 5rem; 
 
   }
   #date{
     font-family: 'Times New Roman', Times, serif;
-     font-size: 2rem; 
+     font-size: 2.5rem; 
   }
 }
 
