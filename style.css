@@ -29,7 +29,6 @@ body{
   box-shadow: 0 0 20px rgba(196, 146, 245, 0.725);
   opacity: 0;
   animation: fadeIn 1.2s ease forwards;
-
 }
 
 @keyframes fadeIn {
