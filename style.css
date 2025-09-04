@@ -71,12 +71,12 @@ body{
   }
 
   #clock{
-  font-size: 3rem; 
+  font-size: 4rem; 
 
   }
   #date{
     font-family: 'Times New Roman', Times, serif;
-     font-size: 1.5rem; 
+     font-size: 2rem; 
   }
 }
 
