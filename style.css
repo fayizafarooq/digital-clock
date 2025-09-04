@@ -17,8 +17,8 @@ body{
 }
 #clock-box{
   color: white;
-  width: 100%;
-  max-width: 600px;
+  width: 90%;
+  max-width: none;
   box-sizing: border-box;
   backdrop-filter: blur(10px);
   background-color: hsla(32, 100%, 88%, 0.042);
@@ -29,6 +29,7 @@ body{
   box-shadow: 0 0 20px rgba(196, 146, 245, 0.725);
   opacity: 0;
   animation: fadeIn 1.2s ease forwards;
+  border: 1px dashed red; 
 
 }
 
@@ -65,9 +66,8 @@ body{
 }
 @media(max-width:500px){
   #clock-box {
-    padding: 15px;
+    padding: 10px;
     width: 80%;
-    max-width: none;
   }
 
   #clock{
