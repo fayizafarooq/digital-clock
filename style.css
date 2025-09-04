@@ -1,0 +1,76 @@
+body{
+  margin: 0;
+  background-image: url(galaxy-3.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+}
+#clock-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+#clock-box{
+  color: white;
+  backdrop-filter: blur(10px);
+  background-color: hsla(32, 100%, 88%, 0.042);
+  text-align: center;
+  border-radius:10px ;
+  padding: 20px 40px;
+  transition:all 0.3s ease ;
+  box-shadow: 0 0 20px rgba(179, 153, 255, 0.6);
+  opacity: 0;
+  animation: fadeIn 1.2s ease forwards;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+#clock-box:hover{
+  background-color: hsla(272, 100%, 88%, 0.2);
+  transform: scale(1.05);
+}
+#clock{
+  font-family: monospace;
+  font-size: 7rem;
+  font-weight: 700;
+  text-shadow: 0 0 10px rgba(179, 153, 255, 0.6);
+  text-shadow: 0 0 10px rgba(60, 2, 127, 0.842);
+
+}
+
+#date{
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+#clock-box:hover #clock,
+#clock-box:hover #date { 
+  color: rgb(42, 1, 72);
+  text-shadow: 0 0 2px rgba(255, 255, 255, 0.3);
+
+}
+@media(max-width:500px){
+  #clock-box {
+    padding: 15px 20px;
+  }
+
+  #clock{
+  font-size: 5rem;
+}
+
+#date{
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 3rem;
+}
+}
+
+
+
