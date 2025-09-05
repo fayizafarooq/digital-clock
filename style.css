@@ -1,84 +1,64 @@
 body{
   margin: 0;
-  padding: 0;
-  background-image: url(galaxy-3.jpg);
-  background-repeat: no-repeat;
+  background-image: url(./galaxy-3.jpg);
   background-position: center;
-  background-attachment: fixed;
+  background-repeat: no-repeat;
   background-size: cover;
-  overflow: hidden;
-}
+  background-attachment: fixed;
+} 
+
 #clock-container{
   display: flex;
-  flex-direction: column;
+  flex-direction:column ;
   justify-content: center;
   align-items: center;
-  height: 100dvh;
+  height: 100vh;
+
 }
 #clock-box{
-  color: white;
-  width: 100%;
-  max-width: 600px;
-  box-sizing: border-box;
+  color:white;
   backdrop-filter: blur(10px);
   background-color: hsla(32, 100%, 88%, 0.042);
   text-align: center;
-  border-radius:10px ;
   padding: 20px 40px;
-  transition:all 0.3s ease ;
+  border-radius: 10px;
+  transition: all 0.3s ease;
   box-shadow: 0 0 20px rgba(196, 146, 245, 0.725);
   opacity: 0;
   animation: fadeIn 1.2s ease forwards;
 }
-
 @keyframes fadeIn {
   to {
     opacity: 1;
   }
 }
-
 #clock-box:hover{
-  background-color: hsla(272, 100%, 88%, 0.2);
+  background-color: hsla(272, 90%, 88%, 0.368);
+  box-shadow: 0 0 20px rgba(179, 144, 255, 0.871);
   transform: scale(1.05);
 }
-#clock{
-  font-family: monospace;
-  font-size: 7rem;
-  font-weight: 700;
-  text-shadow: 0 0 10px rgba(60, 2, 127, 0.842);
 
+#clock{
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 3.5rem;
+  font-weight: 700;
 }
 
 #date{
   font-family: 'Times New Roman', Times, serif;
-  font-size: 3rem;
+  font-size: 2.5rem;
   font-weight: 700;
   margin-bottom: 30px;
-  text-shadow: 0 0 10px rgba(60, 2, 127, 0.842); 
 }
 #clock-box:hover #clock,
-#clock-box:hover #date { 
-  color: rgb(42, 1, 72);
-  text-shadow: 0 0 2px rgba(255, 255, 255, 0.3);
-
+#clock-box:hover #date {
+  color: rgb(42, 1, 72); 
 }
-@media(max-width:650px){
-  #clock-box {
-    padding: 10px;
-    width: 80%;
-  }
-
+@media (min-width:650px){
   #clock{
-  font-size: 3rem; 
-
+    font-size: 7rem;
   }
   #date{
-    font-family: 'Times New Roman', Times, serif;
-     font-size: 2rem; 
+    font-size: 3rem;
   }
 }
-
-
-
-
-
