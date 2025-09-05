@@ -62,19 +62,19 @@ body{
   text-shadow: 0 0 2px rgba(255, 255, 255, 0.3);
 
 }
-@media(max-width:500px){
+@media(max-width:650px){
   #clock-box {
     padding: 10px;
     width: 80%;
   }
 
   #clock{
-  font-size: 4rem; 
+  font-size: 3rem; 
 
   }
   #date{
     font-family: 'Times New Roman', Times, serif;
-     font-size: 2.5rem; 
+     font-size: 2rem; 
   }
 }
 
